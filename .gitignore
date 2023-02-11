@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/CrossCutting.Api/bin/Debug/net7.0
+/CrossCutting.Api/obj
+/CrossCutting.DI/bin/Debug/net7.0
+/CrossCutting.DI/obj
+/CrossCutting.Domain/bin
+/CrossCutting.Domain/obj
+/CrossCutting.Infrastructure/bin
+/CrossCutting.Infrastructure/obj
+/CrossCutting.DI/bin/Release

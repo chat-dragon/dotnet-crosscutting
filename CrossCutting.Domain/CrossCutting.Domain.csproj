@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Configurations>Debug;Release;Develop</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="SeedWork\ITransaction.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.4.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Flunt.Br" />
+    <None Remove="Flunt" />
+    <None Remove="Validations\" />
+    <None Remove="Support\" />
+  </ItemGroup>
+</Project>
