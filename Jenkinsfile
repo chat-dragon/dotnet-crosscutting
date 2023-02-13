@@ -2,15 +2,14 @@ pipeline {
   agent any
   stages {
     stage('Clean workspace') {
-      agent any
       steps {
-        cleanWs()
+        cleanWs(skipWhenFailed: true)
       }
     }
 
     stage('Test') {
       steps {
-        echo 'Testing..'
+        echo '${workspace}'
       }
     }
 
