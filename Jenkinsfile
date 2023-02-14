@@ -10,6 +10,7 @@ pipeline {
     stage('Restore packages') {
       steps {
         sh 'ls -a'
+        sh 'dotnet restore DotnetCrossCutting.sln'
       }
     }
 
