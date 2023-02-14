@@ -9,7 +9,7 @@ pipeline {
 
     stage('Restore packages') {
       steps {
-        bat 'dotnet restore ${workspace}'
+        sh 'dotnet restore ${workspace}'
       }
     }
 
