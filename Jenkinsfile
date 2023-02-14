@@ -7,9 +7,9 @@ pipeline {
       }
     }
 
-    stage('Test') {
+    stage('Restore packages') {
       steps {
-        echo 'workspace: '
+        bat 'dotnet restore ${workspace}'
       }
     }
 
