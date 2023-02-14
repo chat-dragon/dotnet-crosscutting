@@ -9,7 +9,7 @@ pipeline {
 
     stage('Restore packages') {
       steps {
-        sh 'dotnet restore ${workspace}'
+        sh 'ls -a'
       }
     }
 
